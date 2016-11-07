@@ -43,7 +43,7 @@ RUN conda install --yes \
     'matplotlib=1.5*' \
     'scipy=0.17*' \
     'seaborn=0.7*' \
-    'scikit-learn=0.17*' \
+    'scikit-learn=0.18*' \
     'scikit-image=0.12*' \
     'sympy=1.0*' \
     'cython=0.23*' \
