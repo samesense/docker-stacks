@@ -1,5 +1,5 @@
 # Copyright (c) Jupyter Development Team.
-FROM dbhi-dsg/minimal-notebook 
+FROM samesense/docker-stacks-minimal
 
 MAINTAINER Aaron J. Masino
 
