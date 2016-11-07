@@ -69,12 +69,12 @@ RUN conda clean -yt
 RUN conda create -p $CONDA_DIR/envs/python2 python=2.7 \
     'ipython=4.0*' \
     'ipywidgets=4.0*' \
-    'pandas=0.18*' \
+    'pandas=' \
     'matplotlib=1.5*' \
-    'scipy=0.17*' \
+    'scipy=' \
     'seaborn=0.7*' \
-    'scikit-learn=0.17*' \
-    'scikit-image=0.12*' \
+    'scikit-learn' \
+    'scikit-image' \
     'sympy=1.0*' \
     'cython=0.23*' \
     'patsy=0.4*' \
