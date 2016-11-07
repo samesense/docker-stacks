@@ -61,8 +61,6 @@ RUN conda install --yes \
     'gensim=0.12*' \
     && conda clean -yt
 
-RUN conda install --yes -c philopon chainer
-
 RUN conda install --yes -c r rpy2
 
 RUN conda clean -yt
