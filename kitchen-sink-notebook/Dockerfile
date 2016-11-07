@@ -39,12 +39,12 @@ RUN conda install --yes \
 # Install Python 3 packages
 RUN conda install --yes \
     'ipywidgets=4.0*' \
-    'pandas=0.18*' \
+    'pandas' \
     'matplotlib=1.5*' \
     'scipy=0.17*' \
     'seaborn=0.7*' \
-    'scikit-learn=0.18*' \
-    'scikit-image=0.12*' \
+    'scikit-learn' \
+    'scikit-image' \
     'sympy=1.0*' \
     'cython=0.23*' \
     'patsy=0.4*' \
