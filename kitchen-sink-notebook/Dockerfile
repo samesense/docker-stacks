@@ -94,7 +94,7 @@ RUN conda create -p $CONDA_DIR/envs/python2 python=2.7 \
 
 RUN pip install -U mock nose arrow requests
 
-RUN python -m nltk.downloader all
+# RUN python -m nltk.downloader all
 
 USER root
 
