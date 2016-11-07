@@ -69,26 +69,26 @@ RUN conda clean -yt
 RUN conda create -p $CONDA_DIR/envs/python2 python=2.7 \
     'ipython=4.0*' \
     'ipywidgets=4.0*' \
-    'pandas=' \
-    'matplotlib=1.5*' \
-    'scipy=' \
-    'seaborn=0.7*' \
+    'pandas' \
+    'matplotlib' \
+    'scipy' \
+    'seaborn' \
     'scikit-learn' \
     'scikit-image' \
-    'sympy=1.0*' \
-    'cython=0.23*' \
-    'patsy=0.4*' \
-    'statsmodels=0.6*' \
-    'cloudpickle=0.1*' \
-    'dill=0.2*' \
-    'numba=0.24*' \
-    'bokeh=0.11*' \
-    'nltk=3.2*' \
-    'psycopg2=2.6*' \
-    'sqlalchemy=1.0*' \
-    'theano=0.7*' \
-    'pymongo=3*'\
-    'gensim=0.12*' \
+    'sympy' \
+    'cython' \
+    'patsy' \
+    'statsmodels' \
+    'cloudpickle' \
+    'dill' \
+    'numba' \
+    'bokeh' \
+    'nltk' \
+    'psycopg2' \
+    'sqlalchemy' \
+    'theano' \
+    'pymongo'\
+    'gensim' \
     pyzmq \
     && conda clean -yt
 
