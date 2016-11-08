@@ -65,6 +65,8 @@ RUN conda install --yes -c r rpy2
 
 RUN conda clean -yt
 
+RUN conda update scikit-learn
+
 # Install Python 2 packages
 RUN conda create -p $CONDA_DIR/envs/python2 python=2.7 \
     'ipython=4.0*' \
