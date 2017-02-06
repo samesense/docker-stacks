@@ -18,23 +18,21 @@ USER choptiu
 
 RUN conda config --add channels r
 RUN conda install --yes \
-    'r-base=3.2*' \
-    'r-irkernel=0.4*' \
-    'r-plyr=1.8*' \
-    'r-devtools=1.8*' \
-    'r-dplyr=0.4*' \
-    'r-ggplot2=1.0*' \
-    'r-tidyr=0.2*' \
-    'r-shiny=0.12*' \
-    'r-rmarkdown=0.7*' \
-    'r-forecast=5.8*' \
-    'r-stringr=0.6*' \
-    'r-rsqlite=1.0*' \
-    'r-reshape2=1.4*' \
-    'r-nycflights13=0.1*' \
-    'r-caret=6.0*' \
-    'r-rcurl=1.95*' \
-    'r-randomforest=4.6*' && conda clean -yt
+    'r-base' \
+    'r-irkernel' \
+    'r-plyr' \
+    'r-devtools' \
+    'r-dplyr' \
+    'r-ggplot2' \
+    'r-tidyr' \
+    'r-rmarkdown' \
+    'r-forecast' \
+    'r-stringr' \
+    'r-rsqlite' \
+    'r-reshape2' \
+    'r-caret' \
+    'r-rcurl' \
+    'r-randomforest' && conda clean -yt
 
 # Install Python 3 packages
 RUN conda install --yes \
@@ -66,10 +64,10 @@ RUN conda install --yes -c r rpy2
 
 RUN conda clean -yt
 
-RUN conda update scikit-learn
+RUN conda update --yes scikit-learn
 
 # Install Python 2 packages
-RUN conda create -p $CONDA_DIR/envs/python2 python=2.7 \
+RUN conda create --yes -p $CONDA_DIR/envs/python2 python=2.7 \
     'ipython=4.0*' \
     'ipywidgets=4.0*' \
     'pandas' \
