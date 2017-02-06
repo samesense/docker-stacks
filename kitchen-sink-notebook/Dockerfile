@@ -40,6 +40,7 @@ RUN conda install --yes \
 RUN conda install --yes \
     'ipywidgets=4.0*' \
     'pandas' \
+    'xlrd' \
     'matplotlib=1.5*' \
     'scipy=0.17*' \
     'seaborn=0.7*' \
@@ -91,7 +92,7 @@ RUN conda create -p $CONDA_DIR/envs/python2 python=2.7 \
     'theano' \
     'pymongo'\
     'gensim' \
-    pyzmq \
+    'pyzmq' \
     && conda clean -yt
 
 RUN pip install -U mock nose arrow requests
