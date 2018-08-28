@@ -16,6 +16,7 @@ RUN apt-get update && \
 
 USER choptiu 
 
+RUN conda install -c conda-forge pydotplus
 RUN conda config --add channels r
 RUN conda install --yes \
     'r-base' \
@@ -39,7 +40,6 @@ RUN conda install --yes \
     'ipywidgets=4.0*' \
     'pandas' \
     'xlrd' \
-    'pydotplus' \
     'matplotlib=1.5*' \
     'scipy=0.17*' \
     'seaborn=0.7*' \
