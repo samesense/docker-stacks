@@ -8,7 +8,7 @@ USER root
 # R pre-requisites
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-    libxrender1 \
+    libxrender1 graphviz \
     fonts-dejavu \
     gfortran \
     python-qt4 \
@@ -39,6 +39,7 @@ RUN conda install --yes \
     'ipywidgets=4.0*' \
     'pandas' \
     'xlrd' \
+    'pydotplus' \
     'matplotlib=1.5*' \
     'scipy=0.17*' \
     'seaborn=0.7*' \
